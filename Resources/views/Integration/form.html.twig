@@ -1,0 +1,64 @@
+<style>
+    .mailruauth-notes {
+        align-items: flex-start;
+    }
+
+    .mailruauth-notes__body {
+        display: block;
+        min-width: 0;
+        width: 100%;
+    }
+
+    .mailruauth-notes__label,
+    .mailruauth-notes__value {
+        display: block;
+        width: 100%;
+    }
+
+    .mailruauth-notes__label {
+        margin: 0 0 6px;
+        font-weight: 600;
+        line-height: 1.4;
+    }
+
+    .mailruauth-notes__value {
+        box-sizing: border-box;
+        margin: 0 0 16px;
+        padding: 10px 12px;
+        background: rgba(255, 255, 255, 0.78);
+        border-radius: 4px;
+        color: #1f2933;
+        line-height: 1.45;
+        overflow-wrap: anywhere;
+        white-space: normal;
+    }
+
+    .mailruauth-notes__value:last-child {
+        margin-bottom: 0;
+    }
+
+    .mailruauth-settings-copyright {
+        display: block;
+        margin: 10px 0 0;
+        color: #6b7280;
+        font-size: 12px;
+        line-height: 1.4;
+        text-align: right;
+    }
+
+    .mailruauth-settings-copyright a {
+        color: inherit;
+        text-decoration: underline;
+    }
+</style>
+
+<div class="alert alert-info mailruauth-notes">
+    <div class="mailruauth-notes__body">
+        <p class="mailruauth-notes__label">{{ 'mautic.integration.mailruauth.notes.redirect_uri'|trans }}</p>
+        <code class="mailruauth-notes__value">{{ redirect_uri }}</code>
+        <p class="mailruauth-notes__label">{{ 'mautic.integration.mailruauth.notes.scope'|trans }}</p>
+        <code class="mailruauth-notes__value">{{ scope }}</code>
+    </div>
+</div>
+
+<span class="mailruauth-settings-copyright">Copyright <a href="https://sales-snap.ru" target="_blank" rel="noopener noreferrer">Sales-snap.ru</a> 2026</span>
