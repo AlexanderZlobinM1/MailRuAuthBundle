@@ -24,7 +24,8 @@ No Mautic user is auto-created.
 7. Keep **Show Mail.ru button on login page** enabled if the login page should show the extra button.
 8. Publish the plugin and save.
 
-The plugin tile shows the exact callback URL and required Mail.ru OAuth scope.
+The plugin tile links to the Mail.ru OAuth application cabinet and shows the
+exact callback URL plus required Mail.ru OAuth scope.
 
 ## Mail.ru OAuth setup
 

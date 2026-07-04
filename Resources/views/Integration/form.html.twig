@@ -21,6 +21,16 @@
         line-height: 1.4;
     }
 
+    .mailruauth-notes__instruction {
+        margin: 0 0 14px;
+        line-height: 1.45;
+    }
+
+    .mailruauth-notes__instruction a {
+        font-weight: 600;
+        text-decoration: underline;
+    }
+
     .mailruauth-notes__value {
         box-sizing: border-box;
         margin: 0;
@@ -84,6 +94,11 @@
 
 <div class="alert alert-info mailruauth-notes">
     <div class="mailruauth-notes__body">
+        <p class="mailruauth-notes__instruction">
+            {{ 'mautic.integration.mailruauth.notes.instruction.before'|trans }}
+            <a href="https://oauth.mail.ru/app" target="_blank" rel="noopener noreferrer">{{ 'mautic.integration.mailruauth.notes.instruction.link'|trans }}</a>
+            {{ 'mautic.integration.mailruauth.notes.instruction.after'|trans }}
+        </p>
         <p class="mailruauth-notes__label">{{ 'mautic.integration.mailruauth.notes.redirect_uri'|trans }}</p>
         <div class="mailruauth-notes__copy-row">
             <code id="mailruauth-redirect-uri-value" class="mailruauth-notes__value">{{ redirect_uri }}</code>

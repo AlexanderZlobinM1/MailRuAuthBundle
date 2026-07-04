@@ -3,7 +3,7 @@
 return [
     'name'        => 'Mail.ru Auth',
     'description' => 'Mail.ru sign-in for existing Mautic users matched by email.',
-    'version'     => '1.0.2',
+    'version'     => '1.1',
     'author'      => 'Sales Snap',
     'services'    => [
         'events' => [
