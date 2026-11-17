@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+
+- Localize the Mail.ru login separator through the active Mautic locale so the
+  Mail.ru and Yandex login buttons do not mix Russian and English labels.
+
 ## 1.1.4 — 2026-09-06
 
 - Support Mautic 7.2 while retaining the declared older Mautic versions.
