@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 1.1.5 — 2026-11-17
 
 - Localize the Mail.ru login separator through the active Mautic locale so the
   Mail.ru and Yandex login buttons do not mix Russian and English labels.
