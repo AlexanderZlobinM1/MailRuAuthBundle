@@ -2,6 +2,9 @@
 
 Mail.ru sign-in plugin for Mautic 5, 6, and 7.
 
+This project is open-source software licensed under the GNU General Public
+License version 3 or later. See [LICENSE](LICENSE) for the full license text.
+
 The plugin authenticates only existing Mautic users. A Mail.ru login succeeds when:
 
 - the plugin is published and configured,
