@@ -3,6 +3,11 @@
     "description": "Mail.ru sign-in plugin for Mautic users matched by email.",
     "type": "mautic-plugin",
     "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Alexander Zlobin"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "MauticPlugin\\MailRuAuthBundle\\": ""
