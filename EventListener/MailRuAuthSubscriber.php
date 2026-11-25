@@ -277,12 +277,9 @@ class MailRuAuthSubscriber implements EventSubscriberInterface
     {
         $startUrl = $this->router->generate('mautic_sso_login', ['integration' => MailRuAuthIntegration::NAME]);
         $label    = $this->translator->trans('mautic.integration.mailruauth.login_button');
-        $separator = $this->translator->trans('mautic.integration.mailruauth.login_separator');
-
-        return '<style>.mailruauth-login-block{clear:both;margin:14px 0 0}.mailruauth-sep{font-size:11px;color:#6b7280;text-align:center;margin:10px 0}.mailruauth-button{box-sizing:border-box;display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:42px;padding:10px 14px;border:1px solid #168de2;border-radius:6px;background:#168de2;color:#fff;font-size:14px;font-weight:600;text-decoration:none}.mailruauth-button:hover,.mailruauth-button:focus{background:#0f7fce;color:#fff;text-decoration:none}.mailruauth-mark{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:#fff;color:#168de2;font-weight:700;font-family:Arial,sans-serif}</style>'.
+        return '<style>.mailruauth-login-block{clear:both;margin:14px 0 0}.mailruauth-button{box-sizing:border-box;display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:42px;padding:10px 14px;border:1px solid #168de2;border-radius:6px;background:#168de2;color:#fff;font-size:14px;font-weight:600;text-decoration:none}.mailruauth-button:hover,.mailruauth-button:focus{background:#0f7fce;color:#fff;text-decoration:none}.mailruauth-mark{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:#fff;color:#168de2;font-weight:700;font-family:Arial,sans-serif}</style>'.
             '<div class="mailruauth-login-block">'.
-            '<div class="mailruauth-sep">'.$this->e($separator).'</div>'.
-            '<a class="mailruauth-button" href="'.$this->e($startUrl).'"><span class="mailruauth-mark">@</span><span>'.$this->e($label).'</span></a>'.
+            '<a class="mailruauth-button mautic-auth-alternative-button" data-mautic-auth-alternative="1" href="'.$this->e($startUrl).'"><span class="mailruauth-mark">@</span><span>'.$this->e($label).'</span></a>'.
             '</div>';
     }
 

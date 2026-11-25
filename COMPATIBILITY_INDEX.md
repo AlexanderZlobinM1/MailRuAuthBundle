@@ -2,7 +2,7 @@
 
 Last synchronized from confirmed workspace evidence: 22 November 2026.
 
-Current release: `1.1.5` (`da97d94`). Declared support: Mautic 5.x, 6.x, 7.x; PHP >=8.1.
+Current release: `1.1.5` (pending commit). Declared support: Mautic 5.x, 6.x, 7.x; PHP >=8.1.
 
 | Mautic | Status | Confirmed scope |
 | --- | --- | --- |
@@ -11,8 +11,11 @@ Current release: `1.1.5` (`da97d94`). Declared support: Mautic 5.x, 6.x, 7.x; PH
 | 7.1.3 | ✓ | Fresh container and integration settings, 6 Sep 2026 |
 | 7.2.0 | ✓ | Fresh container and integration settings, 6 Sep 2026 |
 
-Mail.ru OAuth exchange was not exercised. Update this file and the workspace `../../COMPATIBILITY_INDEX.md` row with every plugin-related change or review.
+Mail.ru OAuth exchange was not exercised. The login-page alternative-button
+DOM contract change and Serbian translations do not change the runtime
+compatibility scope. Update this file and the workspace `../../COMPATIBILITY_INDEX.md`
+row with every plugin-related change or review.
 
 The 1.1.5 compatibility marks inherit the 6 September 2026 fresh-container
 and integration-settings checks recorded for the preceding release; no new
-runtime compatibility check was performed for this metadata-only update.
+runtime compatibility check was performed for this UI/translation update.

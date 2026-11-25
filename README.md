@@ -32,6 +32,14 @@ No Mautic user is auto-created.
 The plugin tile links to the Mail.ru OAuth application cabinet and shows the
 exact callback URL plus required Mail.ru OAuth scope.
 
+## Shared alternative-login button contract
+
+The login-page button participates in the shared Mautic alternative-login DOM
+contract through `data-mautic-auth-alternative="1"` and the
+`mautic-auth-alternative-button` class. MailRuAuthBundle deliberately emits
+no local `or` separator; the shared coordinator owns the single separator
+and its placement before the topmost marked alternative button.
+
 ## Mail.ru OAuth setup
 
 This plugin uses the Mail.ru OAuth authorization code flow. The only sensitive value stored in Mautic is the Mail.ru application Client Secret.
