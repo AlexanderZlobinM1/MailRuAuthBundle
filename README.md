@@ -36,9 +36,15 @@ exact callback URL plus required Mail.ru OAuth scope.
 
 The login-page button participates in the shared Mautic alternative-login DOM
 contract through `data-mautic-auth-alternative="1"` and the
-`mautic-auth-alternative-button` class. MailRuAuthBundle deliberately emits
-no local `or` separator; the shared coordinator owns the single separator
-and its placement before the topmost marked alternative button.
+`mautic-auth-alternative-button` class. Its wrapper carries
+`data-mautic-auth-alternative-block="1"` and the localized
+`data-mautic-auth-separator-label` value.
+
+MailRuAuthBundle embeds the protected singleton
+`window.MauticAuthAlternativeCoordinator`. It keeps exactly one
+`mautic-auth-alternative-separator` with
+`data-mautic-auth-alternative-separator="1"` immediately before
+the topmost wrapper, removes duplicates, and resynchronizes after DOM changes.
 
 ## Mail.ru OAuth setup
 

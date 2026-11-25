@@ -16,6 +16,9 @@ DOM contract change and Serbian translations do not change the runtime
 compatibility scope. Update this file and the workspace `../../COMPATIBILITY_INDEX.md`
 row with every plugin-related change or review.
 
+The follow-up shared-auth wrapper/coordinator is an unreleased candidate. It
+requires the shared auth sandbox before any release/ref metadata is advanced.
+
 The 1.1.5 compatibility marks inherit the 6 September 2026 fresh-container
 and integration-settings checks recorded for the preceding release; no new
 runtime compatibility check was performed for this UI/translation update.
